@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Minha Biblioteca</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .biblioteca {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .livro {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .livro img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 6px;
+        }
+
+        .livro h3 {
+            margin: 10px 0;
+            font-size: 16px;
+        }
+
+        .livro a {
+            display: inline-block;
+            padding: 8px 12px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 8px;
+        }
+
+        .livro a:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Minha Biblioteca Digital</h1>
+
+    <div class="biblioteca">
+
+        <div class="livro">
+            <img src="capa1.jpg" alt="Capa do Livro">
+            <h3>Nome do Livro 1</h3>
+            <a href="livro1.pdf" target="_blank">Ler PDF</a>
+        </div>
+
+        <div class="livro">
+            <img src="capa2.jpg" alt="Capa do Livro">
+            <h3>Nome do Livro 2</h3>
+            <a href="livro2.pdf" target="_blank">Ler PDF</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
